@@ -18,8 +18,6 @@ headers = clean_list[0]
 
 df = pd.DataFrame(clean_list[1:], columns = headers, dtype = float)
 
-measures = str('mean,median,mode,range,variance,standard deviation').split(',')
-
 for column in headers[1:]:
     print('The mean for '+column+' is: '+str(df[column].mean()))
     print('The median for '+column+' is: '+str(df[column].median()))
